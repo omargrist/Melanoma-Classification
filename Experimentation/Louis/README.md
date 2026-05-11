@@ -15,8 +15,7 @@ This folder contains my personal contribution to the group melanoma classificati
 - Augmentation: horizontal/vertical flip, rotation, colour jitter, affine, random erasing
 - EfficientNet-B3 backbone via `timm` with frozen backbone and custom dropout head
 - Two-phase training: backbone frozen, unfreezes at epoch 3
-- Class-weighted CrossEntropyLoss to handle 98/2 imbalance
-- CosineAnnealingLR scheduler
+- Class-weighted CrossEntropyLoss to handle 98/2 imbalance so the model doesn't just predict benign every time
 - Saves best model checkpoint by AUC
 - Evaluation: confusion matrix, loss curves, AUC curve
 
@@ -89,13 +88,15 @@ This folder contains my personal contribution to the group melanoma classificati
 
 **Key settings:** Image size 320x320 | Batch size 48 | 15 epochs | Mixed precision
 
+**This is the last version using efficientnet-B3**
+
 ---
 
 ### NB6, `melanoma-cw-6-efficientnetB4.ipynb`
 **Purpose:** Architecture comparison, EfficientNet-B4 in place of B3.
 
 **What changes from NB5:**
-- Backbone changed to efficientnet_b4
+- Backbone changed to efficientnet_b4 for comparison
 - Batch size reduced to 16 due to increased GPU memory requirements of B4
 - Gradient clipping added (max_norm=1.0) to prevent loss explosion
 - LR reduced to 1e-4 (B4 more sensitive to high LR)
@@ -112,7 +113,7 @@ This folder contains my personal contribution to the group melanoma classificati
 **Purpose:** Architecture comparison, EfficientNet-B1 as a smaller faster alternative.
 
 **What changes from NB5:**
-- Backbone changed to efficientnet_b1
+- Backbone changed to efficientnet_b1 for comparison
 - Image size reduced to 240x240 (B1 native resolution, faster and less memory)
 - Batch size increased back to 48 (smaller images allow this)
 - 10 epochs set to fit within Kaggle 12-hour GPU limit
