@@ -1,6 +1,6 @@
 # Melanoma Classification
 
-This folder contains my personal contribution to the group melanoma classification project. The notebooks document an iterative development pipeline, with each notebook building on the previous by adding one key feature or experiment. All notebooks run on Kaggle with the SIIM-ISIC Melanoma Classification dataset.
+This folder contains the main efficientnet-B3 notebook with each update to it, which we used for most of the prototype/experiment work. The notebooks document an iterative development pipeline, with each notebook building on the previous by adding one key feature or experiment. All notebooks run on Kaggle with the SIIM-ISIC Melanoma Classification dataset. B1 and B4 were added as comparison points.
 
 ---
 
