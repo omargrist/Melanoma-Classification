@@ -10,9 +10,11 @@ The primary goal was to improve melanoma classification performance under strong
 
 The main model-selection metric was:
 
-**Out-of-fold Average Precision (OOF AUPRC)**
+**OOF AUC**
+And the second model-selection metrics was:
+**OOF AUPRC**
 
-AUROC, precision, recall, specificity, F1 score and threshold sweeps were used as secondary and operational metrics, but not as the main selection criterion.
+AUPRC, precision, recall, specificity, F1 score and threshold sweeps were used as secondary and operational metrics, but not as the main selection criterion.
 
 ## Experimental protocol
 
@@ -32,7 +34,7 @@ The main experiments used:
 This repository focuses on four main research lines:
 
 1. Initial EfficientNet-B0 baselines and robust validation
-2. Transfer learning to Phase 2
+2. Transfer learning
 3. Image-only recipe improvements with stronger augmentation and focal loss
 4. CNN+ViT hybrid models and hybrid transfer
 
@@ -46,7 +48,7 @@ The best official model was Experiment E39.
 |---|---|---|---:|---:|
 | E39 | EfficientNet-B0 | Strong augmentations + focal loss `alpha=0.75`, `gamma=2.0`, 30 epochs | 0.8781 | 0.2347 |
 
-E39 is the official baseline to beat because it achieved the highest OOF AUPRC.
+E39 is the official baseline to beat because it achieved strongest AUC.
 
 ## Most representative experiments
 
