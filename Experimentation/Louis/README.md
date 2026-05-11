@@ -141,10 +141,8 @@ This folder contains my personal contribution to the group melanoma classificati
 ## Environment
 
 - **Platform:** Kaggle Notebooks (T4 GPU, 16GB VRAM)
-- **Framework:** PyTorch 2.x
+- **Framework:** PyTorch
 - **Key libraries:** timm, torchvision, albumentations, sklearn, pandas, matplotlib
-- **GPU quota:** 30 hours per 30-day period (Kaggle free tier)
-
 ---
 
 ## Key Findings
