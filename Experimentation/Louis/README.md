@@ -128,12 +128,12 @@ This folder contains my personal contribution to the group melanoma classificati
 
 | Notebook | Backbone | Image Size | Key Addition | Best AUC |
 |---|---|---|---|---|
-| NB1 | EfficientNet-B3 | 224 | Base pipeline | - |
-| NB2 | EfficientNet-B3 | 224 | Metadata model + ensemble | - |
-| NB3 | EfficientNet-B3 | 224 | Joint model + GradCAM + ROC | - |
-| NB4 | EfficientNet-B3 | 224 | TTA (x8) + 11 metadata features | - |
+| NB1 | EfficientNet-B3 | 224 | Base pipeline | 0.8056 |
+| NB2 | EfficientNet-B3 | 224 | Metadata model + ensemble | 0.8153 |
+| NB3 | EfficientNet-B3 | 224 | Joint model + GradCAM + ROC | 0.8149 |
+| NB4 | EfficientNet-B3 | 224 | TTA (x8) + 11 metadata features | 0.8377 |
 | NB5 | EfficientNet-B3 | 320 | Mixed precision + full retrain | 0.8700 |
-| NB6 | EfficientNet-B4 | 320 | B4 architecture comparison | TBC |
+| NB6 | EfficientNet-B4 | 320 | B4 architecture comparison | 0.8664 |
 | NB7 | EfficientNet-B1 | 240 | B1 efficiency comparison | 0.8554 |
 
 ---
